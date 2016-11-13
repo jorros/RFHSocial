@@ -1,0 +1,613 @@
+
+body {
+    font-family: arial, verdana, sans-serif;
+    font-size: 12px;
+    margin: 0 auto;
+    width: 1000px;
+}
+
+td {
+    vertical-align: top;
+}
+
+a {
+    color: #3e658e;
+    font-weight: bold;
+}
+
+div {
+    display: block;
+}
+
+#header {
+    margin: 0 auto auto;
+    width: 1000px;
+    height: 50px;
+    background-image: url("Images/header.jpg");
+}
+
+#sidebar {
+    width: 140px;
+    float: left;
+}
+
+#quick_login {
+    padding: 3px 0px 0px 6px;
+    width: 117px;
+}
+
+#quick_login .login_field {
+    padding-top: 5px;
+}
+
+#quick_login .login_field label {
+    color: #3e658e;
+    font-weight: 700;
+}
+
+#quick_login input.text {
+    padding: 5px;
+    width: 105px;
+}
+
+input.text, textarea {
+    border: 1px solid #c8cdd4;
+    color: #000000;
+    margin: 0px;
+    padding: 3px;
+}
+
+input {
+    font-family: use-lang-def;
+    font-size: 13px;
+    font-weight: 400;
+    padding: 1px;
+    font-family: "Tahoma", "Verdana", "Arial", sans-serif, "Lucida Sans";
+    font-size: 11px;
+}
+
+.button_blue {
+    display: inline-block;
+    text-align: center;
+    border: 1px solid #aaaaaa;
+    margin: 3px;
+}
+
+.button_blue button {
+    border: 1px solid;
+    cursor: pointer;
+    font-family: tahoma,arial,verdana,sans-serif,Lucida Sans;
+    font-size: 11px;
+    padding: 4px 14px;
+    background-color: #3e658e;
+    color: #FFFFFF;
+}
+
+.content {
+    border-left: 1px solid #aaaaaa;
+    float: left;
+    width: 855px;
+}
+
+#registration  {
+    border-bottom: 1px solid #cecece;
+    width: 800px;
+    margin: 0 auto;
+    color: #3e658e;
+    margin-top: 30px;
+}
+
+#reg_form {
+    width: 500px;
+    margin: 0 auto;
+}
+
+#reg_form label {
+    color: #3e658e;
+    font-weight: 700;
+}
+
+#reg_form input {
+    width: 200px;
+    background: #FFFFFF;
+    border: 1px solid #C3CBD4;
+    color: #000000;
+    margin: 0px;
+    padding: 3px;
+}
+
+.search_field input {
+    color: #000000;
+    width: 200px;
+}
+
+#footer {
+    display: block;
+    padding: 10px;
+    width: 200px;
+    font-size: 10px;
+    color: #999999;
+    margin: 0 auto;
+}
+
+#menu .menu_item {
+    width: 130px;
+    padding: 5px;
+    display: block;
+}
+
+#menu .menu_item a {
+    display: block;
+    color: #3e658e;
+    font-weight: bold;
+    font-size: 12px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
+
+#menu .menu_item a:hover {
+    background-color: #D9E0E7;
+    color: #3e658e;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+div.article {
+    border: 1px solid #cecece;
+    padding: 5px;
+    height: 100px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+}
+
+#feed div.article {
+    border: 1px solid #cecece;
+    padding: 5px;
+    height: 100px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    margin-left: 13px;
+}
+
+div.article .date {
+    float: right;
+    color: #999999;
+    bottom: 0px;
+    right: 0px;
+    width: 510px;
+}
+
+div.article .article_buttons {
+   float: right;
+    width: 60px;
+    top: 0;
+}
+
+div.article  .article_buttons a {
+    margin-left: 10px;
+    float: right;
+}
+
+div.article .owner_name a {
+    font-weight: bold;
+    font-size: 12px;
+    color: #3e658e;
+}
+
+div.article .picture {
+    width: 80px;
+    height: 80px;
+    float: left;
+    margin-right: 10px;
+}
+
+div.article .content_pin {
+    width: 655px;
+    height: 60px;
+    float: left;
+    color: #363636;
+    font-size: 12px;
+    margin-top: 10px;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 3px;
+}
+
+div#new_pin {
+    margin-left: 10px;
+    margin-top: 10px;
+    height: 140px;
+    padding: 2px;
+}
+
+div#new_pin #button_panel {
+    float: left;
+    height: 40px;
+}
+
+div#new_pin #textform textarea {
+    background-color: #feffeb;
+}
+
+div.likes_count {
+    width: 195px;
+    color: #3e658e;
+    cursor: pointer;
+    float: left;
+    margin-right: 10px;
+    display: block;
+}
+
+div.likes_count:hover {
+    text-decoration: underline;
+}
+
+.popup__overlay {
+    position: fixed;
+    left:  0;
+    top:  0;
+    background: #000;
+    opacity: .5;
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+
+#who_liked  {
+    box-shadow: 0 0 10px #303030;
+    position: fixed;
+    top: 20%;
+    left: 30%;
+    width: 500px;
+    height: 340px;
+    background-color: white;
+    z-index: 900;
+    display: none;
+}
+
+#popup_header_liked {
+    width: 250px;
+    background-color: #aecde0;
+    height: 20px;
+    font-weight: bold;
+    padding-right: 25%;
+    padding-left: 25%;
+    display: none;
+}
+
+#popup_header_disliked {
+    width: 250px;
+    background-color: #aecde0;
+    height: 20px;
+    font-weight: bold;
+    padding-right: 25%;
+    padding-left: 25%;
+    display: none;
+}
+
+#who_liked_list {
+    height: 300px;
+    overflow-y: scroll;
+    padding: 10px;
+}
+
+div.who_liked_ {
+    height: 55px;
+    cursor: pointer;
+    padding: 5px;
+    border-bottom: 1px solid #cecece;
+}
+
+div.who_liked_:hover {
+    padding: 5px;
+    border-bottom: 1px solid #cecece;
+    height: 55px;
+    cursor: pointer;
+    background-color: #dadada;
+}
+
+.photo_small {
+    width: 40px;
+    height: 40px;
+    float: left;
+    padding: 5px;
+}
+
+div.who_liked_ .name a {
+    float: left;
+    width: 200px;
+    color: #3e658e;
+    font-weight: bold;
+    margin-top: 25px;
+    padding: 5px;
+    font-size: 13px;
+}
+
+.likes_count_number {
+    width: 10px;
+    float: left;
+    font-weight: bold;
+}
+
+#search_result #search_result_header {
+    width: 835px;
+    color: #3e658e;
+    font-weight: bold;
+    padding: 10px;
+    border-bottom: 1px solid #dadada;
+}
+
+#search_result .search_result_item {
+    width: 815px;
+    padding: 5px;
+    border: 1px solid #eeeeee;
+    height: 60px;
+    margin: 10px;
+}
+
+.search_result_item .profile_info {
+    float: left;
+    padding: 5px;
+    width: 745px;
+}
+
+.search_result_item .profile_info a {
+    color: #3e658e;
+    font-weight: bold;
+}
+
+.content_name {
+    height: 40px;
+    background-color: #E9EDF1;
+    font-weight: bold;
+    color: #2b587a;
+    padding-top: 10px;
+    padding-left: 10px;
+}
+
+#error h1 {
+    color: #3e658e;
+    padding: 13px;
+}
+
+#profile_page {
+    padding: 8px;
+}
+
+#profile_page #profile_sidebar {
+    width: 200px;
+    height: 510px;
+    float: left;
+    border-right: 1px solid #aaaaaa;
+    padding-right: 20px;
+}
+
+
+#profile_page #profile_sidebar #friend_list {
+    padding: 5px;
+    height: 265px;
+    overflow-y: scroll;
+    width: 190px;
+}
+
+.friend_item {
+    width: 175px;
+    height: 50px;
+    padding-top: 5px;
+}
+
+.friend_item:hover {
+    background-color: #eeeeee;
+}
+
+.friend_name {
+    float: left;
+    width: 120px;
+    margin-left: 5px;
+}
+
+.friend_name a {
+    color: #3e658e;
+    text-decoration: none;
+}
+
+#profile_content {
+    width: 580px;
+    float: left;
+    margin-left: 20px;
+    padding: 5px;
+}
+
+#profile_content div#new_pin {
+    height: 140px;
+    padding: 2px;
+    border: none;
+}
+
+#profile_content #send_pin {
+margin-right: 15px;
+}
+
+
+#profile_content #profile_info {
+    width: 400px;
+    margin-top: 10px;
+    float: left;
+}
+
+
+#profile_content #profile_name {
+    color: #3e658e;
+    font-weight: bold;
+    font-size: 13px;
+
+}
+
+.info_description {
+    color: #363636;
+    font-weight: bold;
+    width: 200px;
+    padding-bottom: 5px;
+}
+
+#profile_content #profile_info .info_content {
+    color: #666666;
+    padding-bottom: 5px;
+}
+
+.info_content select, input{
+    width: 150px;
+}
+
+
+#profile_pinnwand {
+    width: 840px;
+    float: left;
+    margin-top: 7px;
+}
+
+.header_1 {
+    background-color: #aecde0;
+    font-weight: bold;
+    height: 15px;
+    padding: 5px;
+}
+
+#friend_page {
+    width: 850px;
+    padding: 5px;
+}
+
+#friend_items {
+    width: 500px;
+    float: left;
+}
+
+#friend_items .friend_item {
+    width: 400px;
+    padding: 5px;
+    margin-top: 5px;
+}
+
+#friend_items .delete_friend {
+    float: right;
+}
+
+#friend_items .delete_friend a {
+    color: #ff5400;
+    text-decoration: none;
+}
+
+#friend_items .delete_friend a:hover {
+    color: #ff5400;
+    text-decoration: underline;
+}
+
+#friend_page #right_sidebar {
+    background-color: #efefef;
+    float: right;
+    height: 400px;
+    width: 330px;
+    padding: 8px;
+}
+
+#friend_page #right_sidebar .sort_description{
+    font-weight: bold;
+    margin-bottom: 3px;
+}
+
+#friend_page #right_sidebar .sort_input{
+    margin-bottom: 6px;
+}
+
+.clickable {
+	cursor: pointer;
+}
+
+a.like {
+    background-image: url(../Resources/Images/like_default.png);
+    width: 23px;
+    height: 20px;
+    padding: 2px;
+    background-repeat: no-repeat;
+    margin-bottom: 3px;
+}
+
+a.like:hover {
+    background-image: url(../Resources/Images/like_hover.png);
+    width: 23px;
+    height: 20px;
+    padding: 2px;
+    background-repeat: no-repeat;
+    margin-bottom: 3px;
+}
+
+a.dislike {
+    background-image: url(../Resources/Images/dislike_default.png);
+    width: 23px;
+    height: 20px;
+    padding: 2px;
+    background-repeat: no-repeat;
+}
+
+a.dislike:hover {
+    background-image: url(../Resources/Images/dislike_hover.png);
+    width: 23px;
+    height: 20px;
+    padding: 2px;
+    background-repeat: no-repeat;
+}
+
+#new_pin_profile {
+    float: left;
+    width: 600px;
+}
+
+#sub_block {
+    height: 100px;
+    background-color: #d3d3d3;
+    float: right;
+    width: 100px;
+    padding: 5px;
+}
+
+.short_pin_or_request {
+    margin-left: 15px;
+    height: 35px;
+    float: left;
+    padding: 5px;
+}
+
+.notification_item {
+    width: 840px;
+    float: left;
+    margin: 5px;
+    border-bottom: 1px solid #cecece;
+    padding-bottom: 10px;
+}
+
+.notification_item .date {
+    width: 100px;
+    color: #999999;
+    float: right;
+}
+
+.highlighted {
+    font-weight: bold;
+    background-color: #eeeeee;
+}
+
+.highlighted .date{
+    color: #2b587a;
+}
+
+#upload_block {
+    padding: 8px;
+    width: 400px;
+    height: 100px;
+    background-color: #D9E0E7;
+    margin-left: 3px;
+    float: left;
+}
